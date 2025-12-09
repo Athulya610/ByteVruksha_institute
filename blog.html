@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        <h1>Our Certificates and Online Programs</h1> 
+    </section>
+
+    <!------blog page content------->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/student4.jpeg">
+                <h2>Our Certificates and online programs</h2>
+                <p>At ByteVruksha, we provide industry-focused online programs designed to help learners build strong technical skills and advance their careers. Each program includes hands-on training, live mentorship, practical projects, and a globally recognized certificate upon completion.</p>
+                <br>
+                <p>Upon successful completion, learners receive a professionally designed certificate featuring a unique ID and QR verification that adds value to their resume and career profile. With flexible learning options and job-focused training, ByteVruksha empowers students, beginners, and professionals to grow confidently in today’s digital world.</p>
+                <br>
+                <p>Each learner receives a professionally designed certificate featuring a unique verification ID and QR code, making it easy to showcase achievements to employers, internships, and academic institutions. With flexible schedules, beginner-friendly modules, and a supportive learning environment, ByteVruksha empowers individuals to learn at their own pace while gaining the confidence, knowledge, and experience needed to excel in the modern digital world.</p>
+                
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn" >POST COMMENT</button>
+                    </form>
+                </div>
+            
+            
+            
+            </div>
+            <div class="blog-right">
+                <h3>Post categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                 <div>
+                    <span>Business Analytics</span>
+                    <span>28</span>
+                </div>
+                 <div>
+                    <span>Data Science</span>
+                    <span>21</span>
+                </div>
+                 <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                 <div>
+                    <span>Fullstack development</span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+<!----- facilities-------->
+
+
+
+<!-----------footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We combine industry-driven curriculum, hands-on training, and expert mentorship to prepare learners for high-growth careers in <br>IT, software development, AI, cloud, cybersecurity, and digital innovation.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+  
+    </div>
+    <p>made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+    <!---javascript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+
+</body>
+</html>

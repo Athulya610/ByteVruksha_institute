@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav> 
+        <h1>Our Courses</h1> 
+    </section>
+
+    <!------course------->
+    <section class="course">
+<h1>Courses We Offer</h1>
+<p>We combine industry-driven curriculum, hands-on training, and expert mentorship to prepare learners for high-growth careers in<br> IT, software development, AI, cloud, cybersecurity, and digital innovation.</p>
+<div class="row">
+    <!-- <div class="course-col">
+        <h3>Full Stack Web Development</h3>
+        <p>Learn both front-end and back-end development with real-world projects. This course covers HTML, CSS, JavaScript, React, Node.js, MongoDB, APIs, deployment, and version control. Students gain complete skills to build dynamic websites, web apps, and scalable platforms used in modern tech industries.</p>
+    </div>
+    <div class="course-col">
+        <h3>Python Programming & Automation</h3>
+        <p>A beginner-friendly yet powerful course focusing on Python for programming, problem-solving, data processing, automation, and small-scale application development. Students learn Python fundamentals, OOP, scripting, automation tools, and practical projects that prepare them for software and data careers.</p>
+    </div> -->
+    <div class="course-col">
+        <h3>Data Science & Machine Learning</h3>
+<p>This course teaches the complete data pipeline — data collection, cleaning, visualization, model building, and AI-based predictions. Students learn Python ML libraries, statistics, neural networks, and real-time AI applications. Perfect for aspiring data scientists and AI professionals.</p>   
+ </div>
+    <div class="course-col">
+        <h3>Artificial Intelligence & Deep Learning</h3>
+        <p>Focused on cutting-edge AI concepts, this program covers neural networks, deep learning architectures, NLP, computer vision, and model deployment. Students work on hands-on AI projects, giving them a strong foundation for advanced AI careers and research roles in tech.</p>
+    </div>
+    <div class="course-col">
+        <h3>Cloud Computing & DevOps</h3>
+        <p>A modern course covering AWS, Azure, Google Cloud, Linux, CI/CD pipelines, Docker, Kubernetes, and cloud deployment. Students learn how to manage cloud infrastructure, automate workflows, and handle scalable systems — essential skills for today's cloud-driven companies.</p>
+    </div>
+</div>
+</section>
+
+<!----- facilities-------->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>ByteVruksha University provides world-class facilities designed to create a modern, productive, and inspiring learning environment. Our campus is equipped with<br> advanced technology, comfortable study spaces, and supportive infrastructure to help students excel in their academic and professional journey.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/school-image8.jpeg">
+            <h3>Smart Computer Labs</h3>
+            <p>High-performance systems, modern software tools, and fast internet to support coding, AI, cloud computing, and cybersecurity projects.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/school-image3.jpeg">
+            <h3>Digital Classrooms</h3>
+            <p>Interactive smart boards, projectors, and audio systems create an engaging and immersive learning experience.</p>            
+        </div>
+        <div class="facilities-col">
+            <img src="images/school-image9.jpeg"> 
+            <h3>Mentorship & Guidance</h3>
+            <p>Students receive continuous support from industry professionals,trainers, and career guidance teams.</p>            
+        </div>
+    </div>
+    
+</section>
+
+<!-----------footer------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We combine industry-driven curriculum, hands-on training, and expert mentorship to prepare learners for high-growth careers in <br>IT, software development, AI, cloud, cybersecurity, and digital innovation.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+  
+    </div>
+    <p>made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+    <!---javascript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+
+</body>
+</html>
